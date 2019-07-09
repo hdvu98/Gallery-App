@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+            <RelativeLayout
+
+                android:layout_width="175dp"
+                android:layout_height="175dp">
+
+                <ImageView
+                    android:id="@+id/imgAvatarFolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/gradient_background"/>
+
+                <TextView
+                    android:id="@+id/txtNameFolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#fff"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/ic_play"
+                    android:padding="12dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/roboto_regular"/>
+
+                <ImageView
+                    android:id="@+id/vdCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checked_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    />
+
+
+            </RelativeLayout>
+
+
+</RelativeLayout>

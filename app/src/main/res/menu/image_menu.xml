@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Add photos"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_add"
+        android:id="@+id/addPhotos"
+        android:iconTint="#fff"/>
+    <item android:title="Sort by"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_sort"
+        android:id="@+id/listSort"
+        android:iconTint="#fff"/>
+
+</menu>

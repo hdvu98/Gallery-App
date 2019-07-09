@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="New Album"
+        android:id="@+id/menuNewAlbum"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_create_new_folder"
+        />
+
+    <item
+        android:id="@+id/menu"
+        android:title="menu"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu"
+        >
+        <menu>
+
+            <item android:title="Sort by"
+                android:id="@+id/menuSortBy" />
+
+            <item android:title="Camera"
+                android:id="@+id/menuCamera" />
+
+            <item android:title="Share"
+                android:id="@+id/menuShare" />
+
+            <item android:title="About us"
+                android:id="@+id/menuAboutUs" />
+
+            <item android:title="Security"
+                android:id="@+id/menuSecu" />
+
+        </menu>
+
+
+    </item>
+
+
+
+
+</menu>

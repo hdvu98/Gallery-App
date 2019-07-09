@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="225dp">
+
+        <ImageView
+            android:id="@+id/imgCoverPhoto"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fr_photo_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="@drawable/overlay_filter">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:id="@+id/txtNumberOfPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="25sp"
+                        android:textColor="#3c4a58"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_below="@id/txtNumberOfPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Photos"
+                        android:textSize="13sp"
+                        android:textColor="#3c4a58"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="@drawable/overlay_filter">
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/txtNumberOfAlbum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textSize="25sp"
+                        android:textColor="#3c4a58"
+                        />
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Albums"
+                        android:textSize="13sp"
+                        android:textColor="#3c4a58"
+                        android:layout_marginRight="15dp"
+                        android:layout_below="@id/txtNumberOfAlbum"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rlayout3">
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/gridviewPhoto"
+        android:layout_below="@+id/rlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center">
+    </GridView>
+
+</RelativeLayout>

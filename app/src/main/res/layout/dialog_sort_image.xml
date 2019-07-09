@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp">
+
+    <TextView
+        android:fontFamily="@font/roboto_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sort by"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgSortImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin = "10dp">
+
+        <RadioButton
+            android:fontFamily="@font/roboto_light"
+            android:id="@+id/rbtnNameImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="17sp"
+            />
+
+        <RadioButton
+            android:fontFamily="@font/roboto_light"
+            android:id="@+id/rbtnDateImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="#000"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:fontFamily="@font/roboto_light"
+            android:id="@+id/rbtnSizeImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:textColor="#000"
+            android:textSize="17sp"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgOrderImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RadioButton
+            android:fontFamily="@font/roboto_light"
+            android:id="@+id/rbtnAscendingImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Ascending"
+            android:textSize="17sp"
+            />
+
+        <RadioButton
+            android:fontFamily="@font/roboto_light"
+            android:id="@+id/rbtnDescendingImg"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:text="Descending"
+            android:textSize="17sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:fontFamily="@font/roboto_regular"
+            android:id="@+id/btnSortOKImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:textColor="#fff"
+            android:background="@drawable/frame" />
+
+        <Button
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnSortCancelImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#fff"
+            android:background="@drawable/frame"
+            android:layout_marginRight="13dp"/>
+
+    </LinearLayout>
+</LinearLayout>
